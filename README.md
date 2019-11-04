@@ -5,7 +5,7 @@
 - [x] Nodemon Watch
 - [x] Airbnb JavaScript Style Guide
 - [ ] Jest Tests
-- [ ] MongoDB Connection
+- [x] MongoDB Connection
 - [ ] User Authentication
 - [ ] User CRUD
 - [ ] User Password Encryption

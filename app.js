@@ -3,11 +3,21 @@ import express from 'express';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
+import mongoose from 'mongoose';
 
+import config from './config.json';
 import indexRouter from './routes/index';
 import usersRouter from './routes/users';
 
 const app = express();
+
+// connect mongoose
+const db = config.mongodb;
+const dbURI = `mongodb+srv://${db.user}:${db.password}@${db.server}`;
+mongoose.connect(dbURI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
