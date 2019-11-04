@@ -1,9 +1,8 @@
 {
   "name": "expresslaunch",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
     "babel-start": "babel-node ./bin/www",
     "watch": "nodemon"
   },
@@ -14,6 +13,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.6.4",
     "@babel/node": "^7.6.3",
