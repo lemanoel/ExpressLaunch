@@ -5,6 +5,7 @@
  */
 import http from 'http';
 import app from '../app';
+import config from '../config.json';
 
 const debug = require('debug')('expresslaunch:server');
 
@@ -28,9 +29,10 @@ function normalizePort(val) {
 }
 
 /**
- * Get port from environment and store in Express.
+ * Get address and port from environment and store in Express.
  */
-const port = normalizePort(process.env.PORT || '3000');
+const { address } = config.server;
+const port = normalizePort(process.env.PORT || config.server.port);
 app.set('port', port);
 
 /**
@@ -79,6 +81,6 @@ function onListening() {
 /**
  * Listen on provided port, on all network interfaces.
  */
-server.listen(port);
+server.listen(port, address);
 server.on('error', onError);
 server.on('listening', onListening);

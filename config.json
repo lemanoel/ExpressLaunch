@@ -1,5 +1,11 @@
+{
+  "server": {
+    "address": "localhost",
+    "port": 3000
+  },
   "mongodb": {
     "server": "development-yd7pv.gcp.mongodb.net",
     "user": "api",
     "password": "0AjL1bay9gsFeN2k"
   }
+}
