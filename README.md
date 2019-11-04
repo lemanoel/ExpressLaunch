@@ -1,8 +1,9 @@
 # ExpressLaunch
 
 ## Features
-- [ ] ES6 Support
-- [ ] Airbnb JavaScript Style Guide
+- [x] ES6 Support
+- [x] Nodemon Watch
+- [x] Airbnb JavaScript Style Guide
 - [ ] Jest Tests
 - [ ] MongoDB Connection
 - [ ] User Authentication
