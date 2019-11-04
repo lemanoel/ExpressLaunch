@@ -4,8 +4,8 @@
     "port": 3000
   },
   "mongodb": {
-    "server": "development-yd7pv.gcp.mongodb.net",
-    "user": "api",
-    "password": "0AjL1bay9gsFeN2k"
+    "server": "example-server.mongodb.net",
+    "user": "username",
+    "password": "5pRDKD#Nj::z1,r*.F#Uw[TK!79@f%"
   }
 }
