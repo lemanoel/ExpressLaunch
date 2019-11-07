@@ -4,6 +4,7 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import mongoose from 'mongoose';
+import dashboard from './dashboard';
 
 import config from './config.json';
 import indexRouter from './routes/index';
@@ -28,6 +29,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// use express-dashboard
+app.use(dashboard);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
